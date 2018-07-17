@@ -3,10 +3,26 @@
   padding: 0;
 }
 
+@media (min-width: 1024px) {
+   body {
+      filter: invert(.3);
+   }
 }
 
+@media (min-width: 800px) and (max-width: 1023px) {
+   body {
+      filter: grayscale(.2);
+   }
 }
 
+@media (min-width: 401px) and (max-width: 799px) {
+   body {
+      filter: opacity(.5);
+   }
 }
 
+@media (max-width: 400px) {
+   body {
+      filter: blur(10px);
+   }
 }
