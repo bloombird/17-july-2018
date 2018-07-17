@@ -50,6 +50,7 @@ main {
 
 .card {
    width: (5 * $grid--unit);
+   line-height: 0;
 
    @media (max-width: ($breakpoint--desktop + $grid--unit)) {
       width: auto;
