@@ -9,11 +9,10 @@ $width--border--thin:   1px;
 $width--border--medium: (2 * $width--border--thin);
 $width--border--large:  (2 * $width--border--medium);
 
-$color--border: black;
+$color--border: #000;
 
 $breakpoint--desktop: (15 * $grid--unit);
 $breakpoint--tablet:  (10 * $grid--unit);
-$breakpoint--mobile:  (5 * $grid--unit);
 
 * {
    margin: 0;
@@ -72,7 +71,6 @@ main {
       }
 
       @media (max-width: ($breakpoint--tablet + $grid--unit)) {
-         display: inline;
          width: 100%;
       }
    }
