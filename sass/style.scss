@@ -1,10 +1,19 @@
 $grid--column-width: 60px;                                /// 60px
-$grid--gutter-width: 20px;                                /// 20px
+$grid--gutter-width: ($grid--column-width / 3);           /// 20px
 $grid--unit: ($grid--column-width + $grid--gutter-width); /// 80px
 $grid--column-count: 15;
-$grid--leading: 25px;
 
 $width--card: (5 * $grid--unit);
+
+$width--border--thin:   1px;
+$width--border--medium: (2 * $width--border--thin);
+$width--border--large:  (2 * $width--border--medium);
+
+$color--border: black;
+
+$breakpoint--desktop: (15 * $grid--unit);
+$breakpoint--tablet:  (10 * $grid--unit);
+$breakpoint--mobile:  (5 * $grid--unit);
 
 * {
    margin: 0;
@@ -20,20 +29,23 @@ header,
 nav,
 main,
 footer {
-   border: 1px solid black;
+   border: $width--border--thin solid $color--border;
 }
 
-header, footer {
-   height: 100px;
+header,
+footer {
 }
 
 nav {
-   height: 80px;
 }
 
 main {
    display: flex;
    border: 0;
+
+   @media (max-width: ($breakpoint--desktop + $grid--unit)) {
+      filter: invert(.95);
+   }
 }
 
 .card {

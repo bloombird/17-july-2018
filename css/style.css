@@ -1,2 +1,2 @@
-*{margin:0;padding:0}body{margin:auto;width:1200px}header,nav,main,footer{border:1px solid black}header,footer{height:100px}nav{height:80px}main{display:flex;border:0}.card{width:400px}.card img{display:block;width:400px}
+*{margin:0;padding:0}body{margin:auto;width:1200px}header,nav,main,footer{border:1px solid #000}main{display:flex;border:0}@media (max-width: 1280px){main{filter:invert(0.95)}}.card{width:400px}.card img{display:block;width:400px}
 /*# sourceMappingURL=style.css.map */
