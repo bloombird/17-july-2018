@@ -4,16 +4,11 @@
 $grid--column-width: 60px;                                /// 60px
 $grid--gutter-width: ($grid--column-width / 3);           /// 20px
 $grid--unit: ($grid--column-width + $grid--gutter-width); /// 80px
-$grid--column-count: 15;
-
-$width--card: (5 * $grid--unit);
 
 /// =================================================================================
 /// Widths
 /// =================================================================================
 $width--border--thin:   1px;
-$width--border--medium: (2 * $width--border--thin);
-$width--border--large:  (2 * $width--border--medium);
 
 /// =================================================================================
 /// Colors
