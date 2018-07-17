@@ -1,0 +1,32 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   /* Use with Chrome Grid extension */
+   width: 1178px;
+   padding: 0 10px;
+   margin: auto;
+}
+
+header, nav, footer, main {
+   border: 1px solid black;
+}
+
+header, footer {
+   height: 100px;
+}
+
+nav {
+   height: 80px;
+}
+
+main {
+   height: 600px;
+}
+
+.card {
+   border: 1px solid red;
+   width: 298px;
+}
