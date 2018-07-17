@@ -1,0 +1,37 @@
+$grid--column-width: 60px;                                /// 60px
+$grid--gutter-width: 20px;                                /// 20px
+$grid--unit: ($grid--column-width + $grid--gutter-width); /// 80px
+$grid--column-count: 15;
+$grid--leading: 25px;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   width: 1180px;
+   padding: 0 10px;
+   margin: auto;
+}
+
+header, nav, main, footer {
+   border: 1px solid black;
+}
+
+header, footer {
+   height: 100px;
+}
+
+nav {
+   height: 80px;
+}
+
+main {
+   height: 600px;
+}
+
+.card {
+   border: 1px solid red;
+   width: 298px;
+}
