@@ -22,7 +22,15 @@ $breakpoint--mobile:  (5 * $grid--unit);
 
 body {
    margin: auto;
-   width: ($grid--column-count * $grid--unit);
+   width: (15 * $grid--unit);
+
+   @media (max-width: ($breakpoint--desktop + $grid--unit)) {
+      width: (10 * $grid--unit);
+   }
+
+   @media (max-width: ($breakpoint--tablet + $grid--unit)) {
+      width: auto;
+   }
 }
 
 header,
@@ -44,15 +52,28 @@ main {
    border: 0;
 
    @media (max-width: ($breakpoint--desktop + $grid--unit)) {
-      filter: invert(.95);
+      display: block;
    }
 }
 
 .card {
-   width: $width--card;
+   width: (5 * $grid--unit);
+
+   @media (max-width: ($breakpoint--desktop + $grid--unit)) {
+      width: auto;
+   }
 
    img {
       display: block;
-      width: $width--card;
+      width: (5 * $grid--unit);
+
+      @media (max-width: ($breakpoint--desktop + $grid--unit)) {
+         display: inline;
+      }
+
+      @media (max-width: ($breakpoint--tablet + $grid--unit)) {
+         display: inline;
+         width: 100%;
+      }
    }
 }
