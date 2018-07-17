@@ -4,18 +4,22 @@ $grid--unit: ($grid--column-width + $grid--gutter-width); /// 80px
 $grid--column-count: 15;
 $grid--leading: 25px;
 
+$width--card: (5 * $grid--unit);
+
 * {
    margin: 0;
    padding: 0;
 }
 
 body {
-   width: 1180px;
-   padding: 0 10px;
    margin: auto;
+   width: ($grid--column-count * $grid--unit);
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
    border: 1px solid black;
 }
 
@@ -28,10 +32,15 @@ nav {
 }
 
 main {
-   height: 600px;
+   display: flex;
+   border: 0;
 }
 
 .card {
-   border: 1px solid red;
-   width: 298px;
+   width: $width--card;
+
+   img {
+      display: block;
+      width: $width--card;
+   }
 }
