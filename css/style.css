@@ -20,21 +20,14 @@ footer {
 
 main {
   border: 0; }
-  @media (max-width: 1280px) {
-    main {
-      display: block; } }
   main img {
-    display: block;
     float: left;
-    line-height: 0px;
     width: 400px; }
     @media (max-width: 1280px) {
       main img {
-        float: left;
-        width: 400px; } }
+        float: left; } }
     @media (max-width: 880px) {
       main img {
-        width: 100%;
-        float: left; } }
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
