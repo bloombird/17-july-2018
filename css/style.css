@@ -1,2 +1,40 @@
-*{margin:0;padding:0}body{margin:auto;width:1200px}@media (max-width: 1280px){body{width:800px}}@media (max-width: 880px){body{width:auto}}header,nav,main,footer{border:1px solid #000}main{border:0}@media (max-width: 1280px){main{display:block}}main img{display:block;float:left;line-height:0px;width:400px}@media (max-width: 1280px){main img{float:left}}@media (max-width: 880px){main img{width:100%;float:left}}
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: auto;
+  width: 1200px; }
+  @media (max-width: 1280px) {
+    body {
+      width: 800px; } }
+  @media (max-width: 880px) {
+    body {
+      width: auto; } }
+
+header,
+nav,
+main,
+footer {
+  border: 1px solid #000; }
+
+main {
+  border: 0; }
+  @media (max-width: 1280px) {
+    main {
+      display: block; } }
+  main img {
+    display: block;
+    float: left;
+    line-height: 0px;
+    width: 400px; }
+    @media (max-width: 1280px) {
+      main img {
+        float: left;
+        width: 400px; } }
+    @media (max-width: 880px) {
+      main img {
+        width: 100%;
+        float: left; } }
+
 /*# sourceMappingURL=style.css.map */

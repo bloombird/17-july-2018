@@ -42,6 +42,7 @@ main {
 
       @media (max-width: ($breakpoint--desktop + $grid--unit)) {
          float: left;
+         width: (5 * $grid--unit);
       }
 
       @media (max-width: ($breakpoint--tablet + $grid--unit)) {
